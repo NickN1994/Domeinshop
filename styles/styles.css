@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&display=swap');
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -10,18 +12,56 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
+/* grijs #899CA0 en donkergroen #1C2B32 */
+
+/*To do*/
+/*-	Background header*/
+/*-	Alle tekst en afbeeldingen in het midden zetten*/
+
+/*-	Review section*/
+/*     o	Schaduw*/
+/*     o	Afbeelding “*/
+
 
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #1C2B32;
+}
 
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 85px;
+}
+
+h2 {
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
 
 
 /*////////////////////////
@@ -29,21 +69,178 @@ Table of Contents:
 ////////////////////////*/
 
 
+/*///////////// 3.1 Header ////////////!*!*header {*!*/
+header {
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-bottom: 400px;
+}
 
-/*///////////// 3.1 Header /////////////*/
+header div {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+}
 
+header input {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 20px 90px 20px 20px;
+    color: #1C2B32;
+    background-color: transparent;
+    border: 3px solid #1C2B32;
+}
 
+.header-input::placeholder {
+    color: #1C2B32;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.button-header {
+    margin: -10px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 20px;
+    background-color: #1C2B32;
+    color: #FFF;
+    border: 1px solid #1C2B32;
+    font-family: inherit;
+}
+
+header h1 {
+    padding-bottom: 30px;
+}
+
+header p {
+    padding-bottom: 20px;
+    font-weight: 500;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
+.h2-review, .h2-support {
+    padding-top: 25px;
+}
 
+.review1 {
+    margin-bottom: 50px;
+}
 
+.review2 {
+    margin-top: 50px;
+}
+
+.review1, .review2 {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.image-testimonial, .image-name {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.image-testimonial {
+    max-height: 44px;
+    padding-right: 25px;
+    padding-left: 50px
+}
+
+.article-review {
+    padding: 35px 100px;
+}
+
+.quote-image, .quote-text {
+    display: inline-block;
+}
+
+.quote-image {
+    position: absolute;
+
+}
+
+.quote-text {
+    position: relative;
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+
+.review1 {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+article {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 /*///////////// 3.3 Support /////////////*/
+.callCenter-image {
+    border-radius: 20px;
+    max-width: 100%;
+}
 
+.review1 {
+    display: inline-block;
+}
+
+.button-contact {
+    background-color: #1C2B32;
+    padding: 25px 25px;
+    color: #FFFFFF;
+    border-radius: 40px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 1px solid #1C2B32;
+}
+
+.text-support {
+    padding: 20px;
+}
+
+.support a {
+    color: #899CA0;
+}
+
+.support a:hover {
+    text-decoration: none;
+}
 
 
 /*///////////// 3.4 Faq /////////////*/
+details {
+    padding: 20px;
+    cursor: pointer;
 
+}
+
+summary {
+    padding-bottom: 20px;
+}
+
+.faq-text {
+    background-color: #609BB6;
+    /*    hier nog andere kleur kiezen*/
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 25px 25px;
+
+
+
+}
 
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    background-color: #1C2B32;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+}
